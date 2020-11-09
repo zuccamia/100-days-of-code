@@ -8,6 +8,10 @@
 
 **Link to work:** Unavailable as the repository is private to the bootcamp organization.
 
-### Day 1:
+### Day 1: November 9, 2020
 
-**Today's Progress**:
+**Today's Progress**: Set up my first project on Rails and started learning [Bulma](https://bulma.io/) for a [volunteer project](https://github.com/zuccamia/patanjalijapan-yoga-app). I have been supporting a local health and wellness organization started up by a friend whom I met at a yoga event here in Tokyo. Previously I helped put together their [website](https://www.patanjali.jp/) and am now maintaining it.
+
+**Thoughts:** I had some issues installing and kicking off Bulma (some `deprecated warnings` with `npm` and `errors` loading `binding.gyp` file) which I have no idea of...Guess I need to take some time to understand the basics of dependencies in software, node and npm. On a side note, after hours running into errors due to misspelling of multiple models, controllers, views files to build a terminal app in Ruby, working on Rails felt like independence day!!
+
+**Link to work:** [Patanjali Japan Foundation App](https://github.com/zuccamia/patanjalijapan-yoga-app)
