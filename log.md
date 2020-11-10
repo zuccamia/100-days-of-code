@@ -15,3 +15,11 @@
 **Thoughts:** I had some issues installing and kicking off Bulma (some `deprecated warnings` with `npm` and `errors` loading `binding.gyp` file) which I have no idea of...Guess I need to take some time to understand the basics of dependencies in software, node and npm. On a side note, after hours running into errors due to misspelling of multiple models, controllers, views files to build a terminal app in Ruby, working on Rails felt like independence day!!
 
 **Link to work:** [Patanjali Japan Foundation App](https://github.com/zuccamia/patanjalijapan-yoga-app)
+
+### Day 2: November 10, 2020
+
+**Today's Progress**: Read about Cron job and got to know that Heroku has free scheduler add-on that I can use for my volunteer project app. I also learned how to use SQLite today in the bootcamp class, had fun solving the challenges for querying.
+
+**Thoughts:** Deep work matters. It took me a while to pick up the problem from last night after spending a few hours on the unrelated tasks in my current recruitment job.
+
+**Link to work:** Same as Day 1.
