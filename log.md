@@ -23,3 +23,11 @@
 **Thoughts:** Deep work matters. It took me a while to pick up the problem from last night after spending a few hours on the unrelated tasks in my current recruitment job.
 
 **Link to work:** Same as Day 1.
+
+### Day 3: November 11, 2020
+
+**Today's Progress**: Successfully set up Docker to get started on my  assigned issue withh [Open Food Network](https://github.com/openfoodfoundation/openfoodnetwork). I struggled to understand `root` and `non-root` user and a plethora of errors that I got trying to set up Docker as `non-root` user previously. There was, however, an error when I tried to run the app on `:localhost`. Luckily, it was a known issue that has already been solved. I just needed to sync my local repo with the upstream master. With this, I re-learnt how to `fetch` from remote repositories and `merge` changes made upstream to the local repo.
+
+**Thoughts:** Docker build reminds me of that time when I was 13 waiting for an entire afternoon for The Sims to download and install on my family's Windows XP desktop...or maybe my laptop is getting old.Jokes aside, the above app that I am hoping to contribute to runs on an older version of Ruby that `is past its end of life and is now unsupported.`. My understanding of how versions of Ruby get managed might be lacking but it got me perplexed how applications originally created with then-best-of-its-time but now-oblivious language/framework version can continue being built with the same one or maintained or updated over time.
+
+**Link to work:** [Issue #6140](https://github.com/openfoodfoundation/openfoodnetwork/issues/6140) 
