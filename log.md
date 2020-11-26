@@ -59,3 +59,18 @@ The previous days (November 12-17) I was kept busy on other assignments (on DB) 
 
 **Thoughts:** Frontend design took me so much more time to complete a seemingly easy task (easy = the solution is clear) than backend. That made me think those designers might be way underpaid!
 
+### Day 8: November 25, 2020
+
+**Today's Progress**: Explored the Ionic framework for building and deploying native mobile app. Also learned the concept of using Rails as an API for React front-end web app/native app. Had a meeting for web app development for a new service of a social entrepreneurship that I am volunteering for. My team mates are graduates from the same coding school I'm in. They handled the meeting well with on-point questions and consultation of technology and process for the CEO (which gave me a little proud moment😊).
+
+**Thoughts:** The framework is pretty sleek and fun to work with, especially with the ready-made UI components resource (saves me tons of hours looking for the right and free button or nav bar look or icon package. Seriously, original designers deserve more money...). My problem is that I am still fairly new to JavaScript and now I am pretty much blind navigating through React 😎...But it's fun! I still need to know how to link Rails with React (TypeScript) in Ionic somehow...
+
+**Link to work:**  [Patanjali Japan Foundation App](https://github.com/zuccamia/patanjalijapan-yoga-app)
+
+### Day 9: November 26, 2020
+
+**Today's Progress**: Still trying to understand how to link Rails json with React fetch calls. It's supposed to be basic...but yeah, I am going to take it easy 🤨. 
+
+**Thoughts:** Had a call with mom today. I realized how lonely my mom must have felt with a busy kid living overseas. Sometimes we become so enthralled in a pursuit that we unconsciously neglect the most important people in our lives.
+
+**Link to work:** Same as day 9
