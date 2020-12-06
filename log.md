@@ -71,6 +71,14 @@ The previous days (November 12-17) I was kept busy on other assignments (on DB) 
 
 **Today's Progress**: Still trying to understand how to link Rails json with React fetch calls. It's supposed to be basic...but yeah, I am going to take it easy 🤨. 
 
-**Thoughts:** Had a call with mom today. I realized how lonely my mom must have felt with a busy kid living overseas. Sometimes we become so enthralled in a pursuit that we unconsciously neglect the most important people in our lives.
+**Thoughts:** Had a call with mom today. I realized how lonely my mom must have felt with a busy kid living abroad. Sometimes we become so enthralled in a pursuit that we unconsciously neglect the most important people in our lives.
 
 **Link to work:** Same as day 9
+
+### Day 10: December 6, 2020
+
+**Today's Progress**: Went back to one of the unsolved optional Active Record challenges of my coding bootcamp curriculum. It took me a while to think in SQL again because the past weeks I have been spending time on front end (which takes **ample** time) with HTML, CSS and JavaScript. My mind was all about the perfect pixel, shadow and in-line boxes. I also participated in a startup event last weekend and that had occupied my mind for several days.
+
+**Thoughts:** Doing many things at the same time is tempting because of the excitement, the novelty and the entailing adrenaline but more often than not I would end up doing not more than one thing properly (sometimes nothing!). Besides, returning to a project after leaving it to work on another one takes more efforts and time to just remind myself: "where was I again...? Gosh, it feels like I'm starting from scratch. Again!". Really, all I need is ABC!
+
+**Link to work:** none today 😔 
