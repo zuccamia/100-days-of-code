@@ -78,8 +78,8 @@ The previous days (November 12-17) I was kept busy on other assignments (on DB) 
 ### Day 10: December 6, 2020
 
 **Today's Progress**: Went back to one of the unsolved optional Active Record challenges of my coding bootcamp curriculum. It took me a while to think in SQL again because the past weeks I have been spending time on front end (which takes **ample** time) with HTML, CSS and JavaScript. My mind was all about the perfect pixel, shadow and in-line boxes. I also participated in a startup event last weekend and that had occupied my mind for several days. 
-Oh, I also learned that in Active Record, `limit(3)` is different from `first(3)` (assuming I'm querying a table with ordered records). The difference is, `first` by default follows the order by primary key. If I want it to behave like `limit`, I need to set the `default scope` for the queried model and give it an order method.
-
+Oh, I also learned that in Active Record, `limit(3)` is different from `first(3)` (assuming I'm querying a table with ordered records). The difference is, `first` by default follows the order by primary key. If I want it to behave like `limit`, I need to define a `default_scope` with an order method (not by primary key) for the queried model, or chain `.order` before `first`.
+  
 **Thoughts:** Doing many things at the same time is tempting because of the excitement, the novelty and the entailing adrenaline but more often than not I would end up doing not more than one thing properly (sometimes nothing!). Besides, returning to a project after leaving it to work on another one takes more efforts and time to just remind myself: "where was I again...? Gosh, it feels like I'm starting from scratch. Again!". Really, all I need is ABC!
 
 **Link to work:** none today 😔 
