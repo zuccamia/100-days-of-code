@@ -14,7 +14,7 @@
 
 **Thoughts:** I had some issues installing and kicking off Bulma (some `deprecated warnings` with `npm` and `errors` loading `binding.gyp` file) which I have no idea of...Guess I need to take some time to understand the basics of dependencies in software, node and npm. On a side note, after hours running into errors due to misspelling of multiple models, controllers, views files to build a terminal app in Ruby, working on Rails felt like independence day!!
 
-**Link to work:** [Patanjali Japan Foundation App](https://github.com/zuccamia/patanjalijapan-yoga-app)
+**Link to work:** [Patanjali Japan Foundation App](https://github.com/zuccamia/patanjalijapan-yoga-app-web)
 
 ### Day 2: November 10, 2020
 
@@ -43,7 +43,7 @@ The previous days (November 12-17) I was kept busy on other assignments (on DB) 
 
 ### Day 5: November 19, 2020
 
-**Today's Progress**: Created the schema and seeds for DB of the [Patanjali Japan Foundation App](https://github.com/zuccamia/patanjalijapan-yoga-app) after learning about ActiveRecord migrations.
+**Today's Progress**: Created the schema and seeds for DB of the [Patanjali Japan Foundation App](https://github.com/zuccamia/patanjalijapan-yoga-app-web) after learning about ActiveRecord migrations.
 
 **Thoughts:** ActiveRecord is pretty magical but sometimes too magical, it's hard to remember all the syntax..
 
@@ -65,7 +65,7 @@ The previous days (November 12-17) I was kept busy on other assignments (on DB) 
 
 **Thoughts:** The framework is pretty sleek and fun to work with, especially with the ready-made UI components resource (saves me tons of hours looking for the right and free button or nav bar look or icon package. Seriously, original designers deserve more money...). My problem is that I am still fairly new to JavaScript and now I am pretty much blind navigating through React 😎...But it's fun! I still need to know how to link Rails with React (TypeScript) in Ionic somehow...
 
-**Link to work:**  [Patanjali Japan Foundation App](https://github.com/zuccamia/patanjalijapan-yoga-app)
+**Link to work:**  [Patanjali Japan Foundation App](https://github.com/zuccamia/patanjalijapan-yoga-app-web)
 
 ### Day 9: November 26, 2020
 
@@ -83,3 +83,31 @@ Oh, I also learned that in Active Record, `limit(3)` is different from `first(3)
 **Thoughts:** Doing many things at the same time is tempting because of the excitement, the novelty and the entailing adrenaline but more often than not I would end up doing not more than one thing properly (sometimes nothing!). Besides, returning to a project after leaving it to work on another one takes more efforts and time to just remind myself: "where was I again...? Gosh, it feels like I'm starting from scratch. Again!". Really, all I need is ABC!
 
 **Link to work:** none today 😔 
+
+### Day 11: December 7, 2020
+
+**Today's Progress**: Pivoted from Ionic React to Rails and React Native for building the yoga app. Created my first simple user signup and login authentication and login session API on Rails with `bcrypt` with [this tutorial](https://qiita.com/OgiharaRyo/items/9949e5a2cda5e48060f0#%E4%B8%80%E8%A6%A7%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%A8%E4%BD%9C%E6%88%90%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0). There is one issue with this method where the password will be exposed in the URL when returning the login API token JSON. So I went to read about `devise`, tried integrating it with my current User model but did not work out well...so I've decided to set another time to understand it properly. 
+
+**Thoughts:** One reason for pivoting is I am likely to learn React after the code camp anyway and React Native is based on React. It's better to learn once and reinforce than to scratching the surface everywhere😟.
+
+**Link to work:** [Patanjali Japan Foundation App](https://github.com/zuccamia/patanjalijapan-yoga-app-web)
+
+### Day 12: December 8, 2020
+
+**Today's Progress**: Continuing on the yoga app, created the simple reminder form where an user can click Yes or No to log his/her activity for the day. Then styled the app with simple `bootstrap` (which took me almost the same time as the authentication...I hope to get better with time and practice 🥺) because even I wouldn't want to try out the app with the default look. Deployed to Heroku but there was an issue with the image of the logo disappearing on Heroku 😔. I also learned that source image path for `views` in Rails (when running on local host) is `assets/<file_name>.png` and not `../../assets/images/<file_name>.png` 🤯. Maybe Heroku doesn't follow that?
+
+**Thoughts:** Having a direction is already half of the work done. I spent several weeks looking up and trying out different frameworks to build the app but less than 10 hours (combined) to actually build it once I decided on which framework to use.
+And yes, Heroku is slow in Japan...
+
+**Link to work:** [Patanjali Japan Foundation App - Web](https://pjf-web-app.herokuapp.com/)
+
+### Day 13: December 9, 2020
+
+**Today's Progress**: Had a problem of pushing local repo to remote one because I nested a repo for web app and another for mobile app inside the original repo locally. Came across `git submodule` and `git subtree` while searching for a solution but although it's exactly what I had in mind, the 2 methods are a bit advanced for my current level with configurations and all. So  I decided to just separate the web and mobile app into independent repos for now.
+Also started working on the React Native app. Ran into a `can't find a variable` in a built-in module and am currently stuck...
+Complete the user progress feature for the web version instead.
+
+**Thoughts:** While I still can, enjoy the process of learning, not just to churn out an end product!
+
+**Link to work:** [PJF App - Mobile](https://github.com/zuccamia/patanjali-japan-app-mobile)
+ 
