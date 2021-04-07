@@ -111,3 +111,25 @@ Complete the user progress feature for the web version instead.
 
 **Link to work:** [PJF App - Mobile](https://github.com/zuccamia/patanjali-japan-app-mobile)
  
+### Day 14: April 7, 2021
+
+**Today's Progress**: First time using AWS for Active Storage on a Rails API and successfully figured out how to upload single and multiple attachments. I also learned about `config/master.key` and how Rails encrypt and store credential keys with it. After my teammate helped set up a AWS storage account and configure the the active storage gem for AWS, it was my turn to add attachment associations and whitelist the attribute for the `Model`. The associations work fine but when I tried to attach and upload (a photo in our case) either in Rails console or via a simple form on `View`, it failed with a `undefined method []' for nil:NilClass`. I had to scratch my head hard, 'but _what_ was `nil`???'. I double checked if the photo(s) params were thoroughly whitelisted, if the associations were correct and if the active storage methods I used were right. They were alright, which confused me further. Thankfully I found a very similar [issue](https://github.com/rails/rails/issues/40763) that gave me a hint. My teammate and I decided to to pair-programming and we figured out how to add the credentials on my local machine. Eventually, the issue occurred because rails failed to read the storage.yml. Credential keys in the `storage.yml` file are read and encrypted in the `credentials.yml.enc` with a Rails `master.key`. However, this `master.key` is by default not pushed to Github. Therefore I didn't have the `master.key` to decrypt the `credentials.yml.enc` created by Lily. There are 2 ways we could solve it:
+1. Ask the person who added and configured the AWS active storage gem for her rails `master.key`. Then create your own local file with this key (the easier way).
+```
+touch config/master.key
+```
+Paste the master key string as it is.
+
+2. Ask the person who created the team's AWS account for the secrets and keys. Then create your own `credentials.yml.enc`
+```
+rm config/credentials.yml.enc                                  // remove the old encrypted credentials
+EDITOR="code --wait" bin/rails credentials:edit               // use VS Code to open and edit the decrypted keys
+// save and close the file to update and encrypt keys
+```
+_note_: you can change code to atom or vim or any other editor of your choice.
+
+And because `master.key` is **not** not pushed elsewhere but stays on the server, we would need to provide this key as a **config variable**.
+
+**Thoughts**: Pairing is fun and can be really productive too!
+
+**Link to work:** Not available since it's currently an organization's private repo.
