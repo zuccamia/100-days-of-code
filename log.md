@@ -128,8 +128,25 @@ EDITOR="code --wait" bin/rails credentials:edit               // use VS Code to 
 ```
 _note_: you can change code to atom or vim or any other editor of your choice.
 
-And because `master.key` is **not** not pushed elsewhere but stays on the server, we would need to provide this key as a **config variable**.
+And because `master.key` is **not** pushed elsewhere but stays on the server, we would need to provide this key as a **config variable**.
 
 **Thoughts**: Pairing is fun and can be really productive too!
 
 **Link to work:** Not available since it's currently an organization's private repo.
+
+### Day 15: April 17, 2021
+
+**Today's Progress**: Pending migration error messages in Rails API is not as explicit as that of Rails!
+```
+2021-04-17T13:18:39.846818+00:00 app[web.1]: I, [2021-04-17T13:18:39.846747 #4]  INFO -- : [b721c8fe-b74e-4ec6-84c0-352e5711e46d] Processing by Api::V1::ExperiencesController#index as HTML
+2021-04-17T13:18:39.858532+00:00 app[web.1]: D, [2021-04-17T13:18:39.858453 #4] DEBUG -- : [b721c8fe-b74e-4ec6-84c0-352e5711e46d]   Experience Load (7.1ms)  SELECT "experiences".* FROM "experiences"
+2021-04-17T13:18:39.860473+00:00 app[web.1]: I, [2021-04-17T13:18:39.860413 #4]  INFO -- : [b721c8fe-b74e-4ec6-84c0-352e5711e46d] Completed 500 Internal Server Error in 13ms (ActiveRecord: 7.1ms | Allocations: 268)
+2021-04-17T13:18:39.861940+00:00 app[web.1]: F, [2021-04-17T13:18:39.861802 #4] FATAL -- : [b721c8fe-b74e-4ec6-84c0-352e5711e46d]
+2021-04-17T13:18:39.861941+00:00 app[web.1]: [b721c8fe-b74e-4ec6-84c0-352e5711e46d] ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "experiences" does not exist
+2021-04-17T13:18:39.861942+00:00 app[web.1]: LINE 1: SELECT "experiences".* FROM "experiences"
+2021-04-17T13:18:39.861943+00:00 app[web.1]: ^
+2021-04-17T13:18:39.861945+00:00 app[web.1]: ):
+```
+A tiny little thing that made me proud was I didn't google at all but figured this out myself...One day at a time 🙂
+
+I also completed a quick Github Learning Lab lesson on working in teams with pull requests. There's an interesting note on things to consider when reviewing PR that I definitely want to keep in mind. It is about `Observing the progress`, that is to focus first and foremost on whether the goal of PR can be reasonably achieved, rather than polising style/wording. The closer the PR to merging, the more robust reviewing will be. Minor changes can be suggested within the PR but major modifications should be suggested with a separate PR based on the author's branch.
