@@ -150,3 +150,20 @@ And because `master.key` is **not** pushed elsewhere but stays on the server, we
 A tiny little thing that made me proud was I didn't google at all but figured this out myself...One day at a time 🙂
 
 I also completed a quick Github Learning Lab lesson on working in teams with pull requests. There's an interesting note on things to consider when reviewing PR that I definitely want to keep in mind. It is about `Observing the progress`, that is to focus first and foremost on whether the goal of PR can be reasonably achieved, rather than polising style/wording. The closer the PR to merging, the more robust reviewing will be. Minor changes can be suggested within the PR but major modifications should be suggested with a separate PR based on the author's branch.
+
+### Day 16: April 18, 2021
+
+**Today's Progress**: My little summary about RESTful principles.
+RESTful refers to REpresentational State Transfer
+**An architecture is considered RESTful when:**
+- A `client` is separate from a `server`
+- _Statelessness_: `server` can respond to requests from `client` without having to know the session state or any stored context on `client` side
+- _Resource_: `client` and `server` communicates by _resource_ that contains nouns, instead of commands what are verbs
+
+**Simple anatomy of a REST request:**
+ HTTP VERBS | PATH | HEADER | BODY
+------------|------|--------|-----
+`GET`, `POST`, `PUT`, `DELETE`| | `Accept`:`<MIME type/MIME sub-type>`| Data
+_note_: Default MIME type (such as `text/plain`) is **not** encompassing.
+ 
+
